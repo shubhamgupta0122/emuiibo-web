@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Emiiboogen</title>
+    <script type="text/javascript" src="vendor/jszip.js"></script>
+    <script type="text/javascript" src="vendor/jszip-utils.js"></script>
+    <script type="text/javascript" src="vendor/FileSaver.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="main-body">
+
+    <div id="loader" class="loader" style="display: block;"></div>
+
+    <div id="tableDiv" class="scrollingtable" style="display: none;"> <!-- scrollable table from https://stackoverflow.com/a/25819112 -->
+      <div>
+        <div>
+          <table>
+            <caption>Emiiboogen</caption>
+            <thead>
+              <tr>
+                <th><div label="ID"></div></th>
+                <th><div label="Name"></div></th>
+                <th><div label="Character"></div></th>
+                <th><div label="AmiiboSeries"></div></th>
+                <th><div label="GameSeries"></div></th>
+                <th><div label="Type"></div></th>
+                <th><div label="Image"></div></th>
+                <th><div label="Download Amiibo Zip"></div></th>
+                <th class="scrollbarhead"></th> <!--ALWAYS ADD THIS EXTRA CELL AT END OF HEADER ROW-->
+              </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+          </table>
+        </div>
+        <!--The End -->
+      </div>
+    </div>
+  </body>
+</html>
